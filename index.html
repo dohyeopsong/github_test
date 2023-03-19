@@ -43,11 +43,23 @@
     }
 
     function changecity() {
-      let city = document.getElementById("city").value;
-      document.getElementById("region_02").style.display="none";
-      document.getElementById("region_064").style.display="none";
-      document.getElementById("region_"+city).style.display="";
+      // let city = document.getElementById("city").value;
+      // document.getElementById("region_02").style.display="none";
+      // document.getElementById("region_064").style.display="none";
+      // document.getElementById("region_"+city).style.display="";
+
+      let city = $('#city').val();
+      $('#region_02').hide();
+      $('#region_064').hide();
+      $('#region_'+ city).show();
     }
+
+    //var, let, const 자바는 이것만 알면 된다.
+    //var는 값을 다시 할당 가능 let은 에러 const는 값을 변화시키지 못함
+    //기초에서 알아야할 할당값 숫자, 소수점 숫자, 문자, 어브젝트, 배열, 참/거짓
+    let a = 1;
+
+    
   </script>
 </body>
 </html>
